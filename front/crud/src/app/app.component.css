@@ -1,0 +1,16 @@
+form{
+    width: 50%;
+    margin: 20px auto;
+}
+input{
+    margin-bottom: 10px;
+}
+input[type="button"]{
+margin-right: 15px;
+}
+select{
+    margin-bottom: 10px;
+}
+button{
+    margin-bottom: 10px;
+}

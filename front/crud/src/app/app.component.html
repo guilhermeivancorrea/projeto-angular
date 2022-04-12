@@ -1,0 +1,71 @@
+<div id="divAlerta" *ngIf="alertVisivel" [ngClass]="{'alert alert-success' : true}">{{alerta}}</div>
+<form>
+  <input type="text" mask="S* S* S* S* S*" name="nome" [(ngModel)]="objUsuario.nome"  placeholder="Nome" class="form-control"  >
+  <input type="text" name="email" [(ngModel)]="objUsuario.email" placeholder="Email" class="form-control" title="Caracteres validos: @ . -">
+  <select name="uf"  [(ngModel)]="objUsuario.uf" class="form-control" (ngModelChange)="listarCidades($event)">
+    <option *ngFor="let uf of estados;" value="{{uf.sigla}}">{{uf.nome}}</option>
+
+  </select>
+  <select name="cidade"  [(ngModel)]="objUsuario.cidade" class="form-control">
+    <option *ngFor="let c of cidades;">{{c.nome}}</option>
+  </select>
+  <input type="text"  [dropSpecialCharacters]="false" mask="(00) 00000-0000" name="telefone" [(ngModel)]="objUsuario.telefone" placeholder="Telefone" class="form-control">
+
+  <input type="button" *ngIf="btnVisivel"  (click)="cadastrar()" value="Cadastrar" class="btn btn-primary">
+  <input type="button" *ngIf="!btnVisivel" (click)="alterar()" value="Alterar" class="btn btn-warning">
+  <input type="button" *ngIf="!btnVisivel" (click)="deletar()" value="Remover" class="btn btn-danger">
+  <input type="button" *ngIf="!btnVisivel" (click)="cancelar()" value="Cancelar" class="btn btn-secondary">
+  <button type="button" *ngIf="btnVisivel" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="filtrar()"> 
+    Filtrar
+  </button>
+
+</form>
+
+<table class="table table-striped">
+
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Estado</th>
+          <th>Cidade</th>
+          <th>Telefone</th>
+          <th>Selecionar</th>
+          
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let u of usuarios; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{u.nome}}</td>
+          <td>{{u.email}}</td>
+          <td>{{u.uf}}</td>
+          <td>{{u.cidade}}</td>
+          <td>{{u.telefone}}</td>
+          <td><button class="btn btn-success" (click)="selecionar(u.id)" >Selecionar</button></td>
+
+      </tr>
+  </tbody>
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quantidade de pessoas por estado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <li *ngFor="let e of estadoCounts">
+          {{e.estado}} {{e.count}}
+        </li>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

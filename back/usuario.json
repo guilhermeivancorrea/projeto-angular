@@ -1,14 +1,6 @@
 {
   "usuario": [
     {
-      "nome": "Guilherme",
-      "email": "guilherme1603@gmail.com",
-      "uf": "SC",
-      "cidade": "Blumenau",
-      "telefone": "47984429095",
-      "id": 1
-    },
-    {
       "nome": "Ralf",
       "email": "ralflima@gmail.com",
       "uf": "CE",

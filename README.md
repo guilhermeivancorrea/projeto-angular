@@ -20,25 +20,58 @@
  ![css](https://github.com/guilhermeivancorrea/projeto-angular/blob/master/img/cssIcon.png)
  
  ## Utilização
- Clonar o Repositório utilizando o git
+ Para executar o projeto é necessario tem o [Node](https://nodejs.org/en/download) e o [VScode](https://code.visualstudio.com/download) instalados na sua maquina.
+ 
+ clone o Repositório utilizando o git...
  ```
- gh repo clone guilhermeivancorrea/desafiopubfuture
+ gh repo clone guilhermeivancorrea/projeto-angular
  ```
- o repositório deve permanecer com o nome "desafiopubfuture"
+ ou faça o download do arquivo zip e descompacte no seu computador
+
+ execute o VScode como administrador, com o VScode aberto, pressione ctrl + K seguido de ctrl + O
+ selecione a pasta onde importou o projeto.
+
+ abra um terminal e mude de Powershell para Command Prompt
+ navegue até a pasta 'back' utilizando o comando
+ ```
+ cd back
+ ```
  
- importe o banco de dados utilizando o workbanch, o dump está na pasta "banco de dados mysql"
- 
- importe o projeto para o eclipse utilizando o gladle
- 
- altere usuario e senha no arquivo "application.properties" na pasta "resources"
- 
- clicando com o botão direito no projeto, Gradle/Refresh Gradle
- 
- start a aplicação diretamente na classe "desafiopubfutureApplication.java"
- 
- importe a coleção no Postman, arquivo na pasta Postman
- 
- utilize o postman para testar a requisições.
+ instale as dependecias 
+  ```
+ ng install
+ ```
+
+ inicie o servidor
+ ```
+ ngx json-server usuario.json
+ ```
+ Seu servidor está pronto, agora vamos rodar o angular
+
+ abra um novo terminal sem fechar o anterior
+ verifique se está modo command prompt
+
+  navegue até a pasta 'front' utilizando o comando
+ ```
+ cd front
+ ```
+ instale as dependecias 
+  ```
+ ng install
+ ```
+  inicie o servidor
+ ```
+ ng s
+ ```
+
+ abra um navegador e digite o endereço:
+ http://localhost:3000
+
+
+
+
+
+
  
  ## Autor
  Guilherme Ivan Correa

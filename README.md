@@ -39,25 +39,25 @@
  
  instale as dependecias 
   ```
- ng install
+ npm install
  ```
 
  inicie o servidor
  ```
- ngx json-server usuario.json
+ npx json-server usuario.json
  ```
  Seu servidor está pronto, agora vamos rodar o angular
 
  abra um novo terminal sem fechar o anterior
  verifique se está modo command prompt
 
-  navegue até a pasta 'front' utilizando o comando
+  navegue até a pasta 'crud' utilizando o comando
  ```
- cd front
+ cd front/crud
  ```
  instale as dependecias 
   ```
- ng install
+ npm install
  ```
   inicie o servidor
  ```
@@ -65,14 +65,9 @@
  ```
 
  abra um navegador e digite o endereço:
- http://localhost:3000
+ http://localhost:4200
 
 
-
-
-
-
- 
  ## Autor
  Guilherme Ivan Correa
  guilherme1603@gmail.com

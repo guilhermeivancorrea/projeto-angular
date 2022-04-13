@@ -14,10 +14,10 @@
   * VScode
  
  ## Tecnologias
- ![node](https://github.com/guilhermeivancorrea/desafiopubfuture/blob/main/documenta%C3%A7%C3%A3o/java.png)
- ![angular](https://github.com/guilhermeivancorrea/desafiopubfuture/blob/main/documenta%C3%A7%C3%A3o/mysql.png)
- ![html](https://github.com/guilhermeivancorrea/desafiopubfuture/blob/main/documenta%C3%A7%C3%A3o/spring.png)
- ![css](https://github.com/guilhermeivancorrea/desafiopubfuture/blob/main/documenta%C3%A7%C3%A3o/gradle.png)
+ ![typescript](https://github.com/guilhermeivancorrea/projeto-angular/blob/master/img/tsIcon.png)
+ ![angular](https://github.com/guilhermeivancorrea/projeto-angular/blob/master/img/angularIcon.png)
+ ![html](https://github.com/guilhermeivancorrea/projeto-angular/blob/master/img/htmlIcon.png)
+ ![css](https://github.com/guilhermeivancorrea/projeto-angular/blob/master/img/cssIcon.png)
  
  ## Utilização
  Clonar o Repositório utilizando o git
